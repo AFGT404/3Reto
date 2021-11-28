@@ -22,7 +22,7 @@ public class Category implements Serializable {
 
     // Relacion listas lib
     @OneToMany(mappedBy = "category", cascade = CascadeType.PERSIST)
-    @JsonIgnoreProperties({"category", "lib"})
+    //@JsonIgnoreProperties({"category", "lib"})
     public List<Lib> libs;
 
 }
